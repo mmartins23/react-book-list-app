@@ -1,10 +1,10 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Notes from '../components/Notes.jsx'
 
 function SingleBookPage() {
     
   const {id} = useParams();
-  
+
 
     const book = 
         {
@@ -20,10 +20,11 @@ function SingleBookPage() {
     return (
       <>
         <div className="container">
+          <Link to='/'>
                 <button className="btn">
                     ← Back to Books
                 </button>
-            
+          </Link> 
             <div className="single-book">
                     <div className="book-cover">
                         <img src={book.cover} />

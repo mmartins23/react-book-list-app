@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom"
 
   function Book({book}) {
     
 
   return (
     <>
+    <Link>
         <div className="book">
             {
                 book.isRead && 
@@ -26,7 +28,7 @@
                 <h3 className="book-title">{ book.title }</h3>
             </div>
         </div>
-
+    </Link>
     </>
   )
 }
