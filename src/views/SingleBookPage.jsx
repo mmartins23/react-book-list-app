@@ -1,7 +1,11 @@
+import { useParams } from 'react-router-dom';
 import Notes from '../components/Notes.jsx'
 
 function SingleBookPage() {
     
+  const {id} = useParams();
+  
+
     const book = 
         {
           id: 1,
